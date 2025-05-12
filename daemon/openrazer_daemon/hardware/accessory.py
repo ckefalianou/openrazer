@@ -94,6 +94,22 @@ class RazerMouseDock(_RazerDeviceBrightnessSuspend):
     DEVICE_IMAGE = "https://assets.razerzone.com/eeimages/support/products/1711/1711_-_mouse_dock_chroma.png"
 
 
+class RazerMouseDockPro(_RazerDeviceBrightnessSuspend):
+    """
+    Class for the Razer Mouse Dock Pro
+    """
+    USB_VID = 0x1532
+    USB_PID = 0x00A4
+    HAS_MATRIX = True
+    MATRIX_DIMS = [1, 8]
+    # EVENT_FILE_REGEX = re.compile(r'.*Razer_Mouse_Dock-if0(1|2)-event-kbd')
+    METHODS = ['get_device_type_accessory', 'set_static_effect', 'set_spectrum_effect', 'set_brightness',
+               'get_brightness', 'set_none_effect', 'set_breath_random_effect', 'set_breath_single_effect',
+               'set_breath_dual_effect', 'set_custom_effect', 'set_key_row']
+
+    DEVICE_IMAGE = "https://assets2.razerzone.com/images/pnx.assets/5092a5837dc3b459852daa2d45b7068c/razer-mouse-dock-pro-transceiver-desktop.webp"
+
+
 class RazerNommoChroma(_RazerDeviceBrightnessSuspend):
     """
     Class for the Razer Nommo Chroma (Speakers)
