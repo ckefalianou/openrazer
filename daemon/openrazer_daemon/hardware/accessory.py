@@ -101,11 +101,18 @@ class RazerMouseDockPro(_RazerDeviceBrightnessSuspend):
     USB_VID = 0x1532
     USB_PID = 0x00A4
     HAS_MATRIX = True
+    WAVE_DIRS = (1, 2)
     MATRIX_DIMS = [1, 8]
-    # EVENT_FILE_REGEX = re.compile(r'.*Razer_Mouse_Dock-if0(1|2)-event-kbd')
-    METHODS = ['get_device_type_accessory', 'set_static_effect', 'set_spectrum_effect', 'set_brightness',
-               'get_brightness', 'set_none_effect', 'set_breath_random_effect', 'set_breath_single_effect',
-               'set_breath_dual_effect', 'set_custom_effect', 'set_key_row']
+    EVENT_FILE_REGEX = re.compile(r'.*RAZER_Razer_Mouse_Dock_Pro-event-if01')
+    METHODS = ['set_brightness', 'get_brightness', 'get_device_type_accessory', 'set_custom_effect', 'set_key_row', 'get_charging_brightness', 'set_charging_brightness', 'get_fast_charging_brightness', 'set_fast_charging_brightness',  'get_fully_charged_brightness', 'set_fully_charged_brightness',
+               # Idle
+               'set_wave_effect', 'set_static_effect', 'set_spectrum_effect', 'set_none_effect', 'set_breath_random_effect', 'set_breath_single_effect', 'set_breath_dual_effect',
+               # Charging
+               'set_charging_wave', 'set_charging_static', 'set_charging_spectrum', 'set_charging_none', 'set_charging_breath_random', 'set_charging_breath_single', 'set_charging_breath_dual',
+               # Fast Charging
+               'set_fast_charging_wave', 'set_fast_charging_static', 'set_fast_charging_spectrum', 'set_fast_charging_none', 'set_fast_charging_breath_random', 'set_fast_charging_breath_single', 'set_fast_charging_breath_dual',
+               # Fully Charged
+               'set_fully_charged_wave', 'set_fully_charged_static', 'set_fully_charged_spectrum', 'set_fully_charged_none', 'set_fully_charged_breath_random', 'set_fully_charged_breath_single', 'set_fully_charged_breath_dual']
 
     DEVICE_IMAGE = "https://assets2.razerzone.com/images/pnx.assets/5092a5837dc3b459852daa2d45b7068c/razer-mouse-dock-pro-transceiver-desktop.webp"
 
