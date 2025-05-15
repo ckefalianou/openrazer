@@ -746,7 +746,7 @@ static ssize_t razer_attr_write_matrix_effect_wave(struct device *dev, struct de
 
         if(device->usb_dev->descriptor.idProduct == USB_DEVICE_ID_RAZER_MOUSE_DOCK_PRO) {
             request.transaction_id.id = 0xFF;
-        }else {
+        } else {
             request.transaction_id.id = 0x1F;
         }
 
