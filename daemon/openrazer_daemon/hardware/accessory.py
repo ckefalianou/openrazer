@@ -114,7 +114,7 @@ class RazerMouseDockPro(_RazerDeviceBrightnessSuspend):
                # Fully Charged
                'set_fully_charged_wave', 'set_fully_charged_static', 'set_fully_charged_spectrum', 'set_fully_charged_none', 'set_fully_charged_breath_random', 'set_fully_charged_breath_single', 'set_fully_charged_breath_dual']
 
-    DEVICE_IMAGE = "https://assets2.razerzone.com/images/pnx.assets/5092a5837dc3b459852daa2d45b7068c/razer-mouse-dock-pro-transceiver-desktop.webp"
+    DEVICE_IMAGE = "https://assets3.razerzone.com/hLGw-_MX7dc4gv9SYK5lVD7bFvE=/1500x1000/https%3A%2F%2Fmedias-p1.phoenix.razer.com%2Fsys-master-phoenix-images-container%2Fh05%2Fh7a%2F9449945956382%2F220823-mouse-dock-pro-1500x1000-1-v2.jpg"
 
 
 class RazerNommoChroma(_RazerDeviceBrightnessSuspend):
