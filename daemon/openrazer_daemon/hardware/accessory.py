@@ -103,16 +103,20 @@ class RazerMouseDockPro(_RazerDeviceBrightnessSuspend):
     HAS_MATRIX = True
     WAVE_DIRS = (1, 2)
     MATRIX_DIMS = [1, 8]
-    EVENT_FILE_REGEX = re.compile(r'.*RAZER_Razer_Mouse_Dock_Pro-event-if01')
-    METHODS = ['set_brightness', 'get_brightness', 'get_device_type_accessory', 'set_custom_effect', 'set_key_row', 'get_charging_brightness', 'set_charging_brightness', 'get_fast_charging_brightness', 'set_fast_charging_brightness', 'get_fully_charged_brightness', 'set_fully_charged_brightness',
-               # Idle
-               'set_wave_effect', 'set_static_effect', 'set_spectrum_effect', 'set_none_effect', 'set_breath_random_effect', 'set_breath_single_effect', 'set_breath_dual_effect',
-               # Charging
-               'set_charging_wave', 'set_charging_static', 'set_charging_spectrum', 'set_charging_none', 'set_charging_breath_random', 'set_charging_breath_single', 'set_charging_breath_dual',
-               # Fast Charging
-               'set_fast_charging_wave', 'set_fast_charging_static', 'set_fast_charging_spectrum', 'set_fast_charging_none', 'set_fast_charging_breath_random', 'set_fast_charging_breath_single', 'set_fast_charging_breath_dual',
-               # Fully Charged
-               'set_fully_charged_wave', 'set_fully_charged_static', 'set_fully_charged_spectrum', 'set_fully_charged_none', 'set_fully_charged_breath_random', 'set_fully_charged_breath_single', 'set_fully_charged_breath_dual']
+    METHODS = [
+        'get_device_type_accessory',
+        'set_brightness',
+        'get_brightness',
+        'set_custom_effect',
+        'set_key_row',
+        'set_wave_effect',
+        'set_static_effect',
+        'set_spectrum_effect',
+        'set_none_effect',
+        'set_breath_random_effect',
+        'set_breath_single_effect',
+        'set_breath_dual_effect'
+    ]
 
     DEVICE_IMAGE = "https://assets3.razerzone.com/hLGw-_MX7dc4gv9SYK5lVD7bFvE=/1500x1000/https%3A%2F%2Fmedias-p1.phoenix.razer.com%2Fsys-master-phoenix-images-container%2Fh05%2Fh7a%2F9449945956382%2F220823-mouse-dock-pro-1500x1000-1-v2.jpg"
 

@@ -2295,7 +2295,6 @@ static int razer_accessory_probe(struct hid_device *hdev, const struct hid_devic
 
         switch(usb_dev->descriptor.idProduct) {
         case USB_DEVICE_ID_RAZER_CHARGING_PAD_CHROMA:
-        case USB_DEVICE_ID_RAZER_MOUSE_DOCK_PRO:
             // Razer has also added a "Fast Wave" effect for at least this device
             // which uses the same effect command but a speed parameter of 0x10.
             // It has not been implemented.
@@ -2537,7 +2536,6 @@ static void razer_accessory_disconnect(struct hid_device *hdev)
 
         switch(usb_dev->descriptor.idProduct) {
         case USB_DEVICE_ID_RAZER_CHARGING_PAD_CHROMA:
-        case USB_DEVICE_ID_RAZER_MOUSE_DOCK_PRO:
             device_remove_file(&hdev->dev, &dev_attr_charging_led_brightness);           // Charging effects
             device_remove_file(&hdev->dev, &dev_attr_charging_matrix_effect_wave);
             device_remove_file(&hdev->dev, &dev_attr_charging_matrix_effect_spectrum);
